@@ -1,0 +1,47 @@
+[
+	{"scooterName":"Stella Auotmatic",
+	 "scooterClass":"genuine",
+	 "scooterID": "stlellauto",
+	 "scooterImage":"bikes/stellauto.jpg",
+	 "scooterBrand":"icons/genuine.gif",
+	 "price":"3499",
+	 "engine":"125",
+	 "mpg":"100",
+	 "speed":"60",
+	 "feature": true
+	},
+	{"scooterName":"Buddy International",
+  	 "scooterClass":"genuine",
+  	 "scooterID":"buddy-international",
+	 "scooterImage":"bikes/buddy_int.jpg",
+	 "scooterBrand":"icons/genuine.gif",
+	 "price":"2199",
+	 "engine":"50",
+	 "mpg":"100",
+	 "speed":"30",
+	 "feature": false
+	},
+	{"scooterName":"Roughhouse R50",
+     "scooterClass":"genuine",
+     "scooterID":"roughhouse",
+	 "scooterImage":"bikes/roughhouse.jpg",
+	 "scooterBrand":"icons/genuine.gif",
+	 "price":"2199",
+	 "engine":"50",
+	 "mpg":"100",
+	 "speed":"30",
+	 "feature": true
+	},
+	{"scooterName":"Primavera",
+	 "scooterClass":"vespa",
+	 "scooterID": "primavera",
+	 "scooterImage":"bikes/primavera.jpg",
+	 "scooterBrand":"icons/vespa.gif",
+	 "price":"4799",
+	 "engine":"155",
+	 "mpg":"117",
+	 "speed":"59",
+	 "feature": true
+	}
+]
+

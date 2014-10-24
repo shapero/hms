@@ -8,14 +8,16 @@
 <body>	
 	<header class="header">
 		<div class="header-div">
-			<img src="icons/Logo.jpg" href="index.html" class="logo">
-			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="scooters.html" class="active">Scooters</a></li>
-				<li><a href="parts.html">Parts + Accessories</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="about.html">About Us</a></li>
-			</ul>
+			<a href="index.html"><img src="icons/Logo.jpg" class="logo"></a>
+			<div class="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="selected"><a href="scooters.html">Scooters</a></li>
+					<li><a href="parts.html">Parts</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<div class="main">
@@ -23,120 +25,72 @@
 			<div class="scooter-nav-brand">
 				<form>
 					<h4>Brand</h4>
-					<label><input type="checkbox" name="piaggio" value="piaggio">Piaggio</label><br>
-					<label><input type="checkbox" name="vespa" value="vespa">Vespa</label><br>
-					<label><input type="checkbox" name="sym" value="sym">SYM</label><br>
-					<label><input type="checkbox" name="lance" value="lance">Lance</label><br>
-					<label><input type="checkbox" name="genuine" value="genuine">Genuine</label><br>
-					<label><input type="checkbox" name="all-brands" value"all-brands">All Brands</label>
+					<label><input type="checkbox" name="make" value="piaggio" class="brand-input" checked="checked">Piaggio</label><br>
+					<label><input type="checkbox" name="make" value="vespa" class="brand-input" checked="checked">Vespa</label><br>
+					<label><input type="checkbox" name="make" value="sym" class="brand-input" checked="checked">SYM</label><br>
+					<label><input type="checkbox" name="make" value="lance" class="brand-input" checked="checked">Lance</label><br>
+					<label><input type="checkbox" name="make" value="genuine" class="brand-input" checked="checked">Genuine</label><br>
+					<label><input type="checkbox" name="make" value="all-brands" class="brand-input-all" checked="checked">All Brands</label>
 				</form>
 			</div>
 			<div class="scooter-nav-engine">
 				<form>
 					<h4>Engine Size</h4>
-					<label><input type="checkbox" name="50" value"50">50cc</label><br>
-					<label><input type="checkbox" name="125" value="125">125cc</label><br>
-					<label><input type="checkbox" name="150" value="150">150cc</label><br>
-					<label><input type="checkbox" name="200" value="200">200cc and up</label><br>
-					<label><input type="checkbox" name="all-sizes" value="all-sizes">All Sizes</label>
+					<label><input type="checkbox" name="engine" value="50" class="engine-input">50cc</label><br>
+					<label><input type="checkbox" name="engine" value="125" class="engine-input">125cc</label><br>
+					<label><input type="checkbox" name="engine" value="150" class="engine-input">150cc</label><br>
+					<label><input type="checkbox" name="engine" value="200" class="engine-input">200cc and up</label><br>
+					<label><input type="checkbox" name="engine" value="all-sizes" class="engine-input-all">All Sizes</label>
 				</form>
 			</div>
 		</div>
 		<div class="scooter-browse">
-		<div class="bike-card" id="stellauto">
-				<div class="bike-header">
-					<h2>Stella Automatic</h2>
-					<img src="bikes/stellauto.jpg" class="bike-picture">
-					<img src="icons/genuine.gif" class="brand-logo">
-				</div>
-				<div class="bike-info">
-					<div class="bike-color">
-						<div style="background-color:red"></div>
-						<div style="background-color:white"></div>
-						<div style="background-color:blue"></div>
-						<div style="background-color:black"></div>
-					</div>			
-					<h3>Specifications</h4>
-					<ul class="specs">
-						<li class="left-specs">
-							<ul>
-								<li class="price"> 3499 </li>
-								<li class="engine"> 125cc </li>
-							</ul>
-						</li>
-						<li class="right-specs">
-							<ul>
-								<li class="mpg"> 100 MPG</li>
-								<li class="speed"> 60 MPH</li>
-							</ul>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-			<div class="bike-card" id="buddy-international">
-				<div class="bike-header">
-					<h2>Buddy International</h2>
-					<img src="bikes/buddy_int.jpg" class="bike-picture">
-					<img src="icons/genuine.gif" class="brand-logo">
-				</div>
-				<div class="bike-info">
-					<div class="bike-color">
-						<div style="background-color:#7E7B5C"></div>
-						<div style="background-color:red"></div>
-						<div style="background-color:blue"></div>
-					</div>			
-					<h3>Specifications</h4>
-					<ul class="specs">
-						<li class="left-specs">
-							<ul>
-								<li class="price"> 2199 </li>
-								<li class="engine"> 50cc </li>
-							</ul>
-						</li>
-						<li class="right-specs">
-							<ul>
-								<li class="mpg"> 100 MPG</li>
-								<li class="speed"> 30 MPH</li>
-							</ul>
-						</li>
-					</ul>
-
-				</div>
-			<div class="bike-card" id="roughhouse">
-				<div class="bike-header">
-					<h2>Roughhouse R50</h2>
-					<img src="bikes/roughhouse.jpg" class="bike-picture">
-					<img src="icons/genuine.gif" class="brand-logo">
-				</div>
-				<div class="bike-info">
-					<div class="bike-color">
-						<div style="background-color:#7E7B5C"></div>
-						<div style="background-color:red"></div>
-						<div style="background-color:blue"></div>
-					</div>			
-					<h3>Specifications</h4>
-					<ul class="specs">
-						<li class="left-specs">
-							<ul>
-								<li class="price"> 2199 </li>
-								<li class="engine"> 50cc </li>
-							</ul>
-						</li>
-						<li class="right-specs">
-							<ul>
-								<li class="mpg"> 100 MPG</li>
-								<li class="speed"> 30 MPH</li>
-							</ul>
-						</li>
-					</ul>
-
-				</div>
-			</div>
+			<ul id="scooter-browse-list">
+			</ul>
 		</div>
 	</div>
 	<footer>
 		<p>This site contains links to other internet sites. Such links are not endorsements of any products or services in such sites, and no information in such site has been endorsed or approved by Highland Motorsport LLC</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$.getJSON("js/scooter.json", function(response){
+			$.each(response, function(index, bike) {
+				$("#scooter-browse-list").append('<li class="bike-card '+bike.scooterClass+'"><div class="bike-header"><h2>'+bike.scooterName+'</h2><img src="'+bike.scooterImage+'" alt="Scooter image" class="bike-picture"><img src="'+bike.scooterBrand+'" alt="Scooter Brand" class="brand-logo"></div><div class="bike-info"><h3>Specifications</h3><ul class="specs"><li class="left-specs"><ul><li class="price">'+bike.price + '</li><li class="engine">'+bike.engine+'cc</li></ul></li><li class="right-specs"><ul><li class="mpg">'+bike.mpg+'MPG</li><li class="speed">'+bike.speed+'MPH</li></ul></li></ul></div></li>');
+			})//end each
+		});
+	 </script>
+	 <script>
+	  $(".brand-input").change(
+    function() {
+      var class = $(this).val();
+      if (class === "all-brands") {
+        if (this.checked) {
+          $(".brand-input").each( function(){
+            if (this.checked) {
+              $(this).prop("checked", false)
+            }
+          })
+        } else {
+          $(".brand-input").each( function(){
+            if (!this.checked) {
+              $(this).prop("checked", true)
+            }
+          })        
+        }
+      } else {
+        if (this.checked) {
+          $("#sooter-browse-list li").hasClass(class).attr("display", "none");
+        } else {
+          $("#sooter-browse-list li").hasClass(class).attr("display", "block");
+        }
+      }
+    }
+  )
+ });
+
+
+	 </script>
 </body>
 </html>

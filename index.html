@@ -8,18 +8,26 @@
 <body>	
 	<header class="header">
 		<div class="header-div">
-			<img src="icons/Logo.jpg" href="index.html" class="logo">
-			<ul class="main-nav">
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="scooters.html">Scooters</a></li>
-				<li><a href="parts.html">Parts + Accessories</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-				<li><a href="about.html">About Us</a></li>
-			</ul>
+			<a href="index.html"><img src="icons/Logo.jpg" class="logo"></a>
+			<div class="main-nav">
+				<ul>
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="scooters.html">Scooters</a></li>
+					<li><a href="parts.html">Parts</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<div class="body">
-		<div class="slideshow">
+		<div class="slideshow center margin1">
+		    <ul class="list-no">
+		        <li><img src="banners/946.jpg" width="auto" height="auto"  alt="Vespa 946" class="slide"></li>
+		        <li><img src="banners/primavera.jpg" width="auto" height="auto"  alt="Vespa Primavera" class="slide"></li>
+		        <li><img src="banners/savings.jpg" width="auto" height="auto"  alt="Customer Cash" class="slide"></li>
+		        <li><img src="banners/sprint.jpg" width="auto" height="auto"  alt="Vespa Sprint" class="slide"></li>
+		    </ul>
 		</div>
 		<div class="store-info">
 			<h2>Store Hours</h2>
@@ -34,50 +42,46 @@
 				<p><em>Extended hours available</em></p>
 			</div>
 			<h2>Contact Information</h2>
-			<div class="contact-body">
-				<p><span>Phone</span> (502) 451-2150</p>
-				<p><span>Address</span> 1125 Bardstown Road<br> &nbsp &nbsp &nbsp &nbsp Louisville KY 40207</p>
-				<p><span>Email</span> service@highlandmotorsport.com </p>
-				<p><span>Facebook</span> <a href="http://www.facebook.com/highlandmotorsport">Highland Motorsport</a></p>
+			<div class="contact">
+				<p><span class="phone"></span> (502) 451-2150</p>
+				<p><span class="address"></span> 1125 Bardstown Road<br> &nbsp; &nbsp; &nbsp; &nbsp; Louisville KY 40207</p>
+				<p><span class="email"></span> <a href="mailto:service@highlandmotorsport.com">service@highlandmotorsport.com</a></p>
+				<p><span class="facebook"></span> <a href="http://www.facebook.com/highlandmotorsport" target="_blank">Highland Motorsport</a></p>
 			</div>
 		</div>
-		<div class="sale-items">
-			<h2>Special Offers</h2>
-			<div class="bike-card">
-				<div class="bike-header">
-					<h2>Stella Automatic</h2>
-					<img src="bikes/stellauto.jpg" class="bike-picture">
-					<img src="icons/genuine.gif" class="brand-logo">
-				</div>
-				<div class="bike-info">
-					<div class="bike-color">
-						<div style="background-color:red"></div>
-						<div style="background-color:white"></div>
-						<div style="background-color:blue"></div>
-						<div style="background-color:black"></div>
-					</div>			
-					<h3>Specifications</h4>
-					<ul class="specs">
-						<li class="left-specs">
-							<ul>
-								<li class="price"> 3499 </li>
-								<li class="engine"> 125cc </li>
-							</ul>
-						</li>
-						<li class="right-specs">
-							<ul>
-								<li class="mpg"> 100 MPG</li>
-								<li class="speed"> 60 MPH</li>
-							</ul>
-						</li>
-					</ul>
-
-				</div>
-			</div>
+		<div class="featured-scooters">
+			<ul id="scooter-browse-list">
+			</ul>
 		</div>	
 	</div>
 	<footer>
 		<p>This site contains links to other internet sites. Such links are not endorsements of any products or services in such sites, and no information in such site has been endorsed or approved by Highland Motorsport LLC</p>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			$.getJSON("js/scooter.json", function(response){
+			$.each(response, function(index, bike) {
+				if (bike.feature === true) {
+				$("#scooter-browse-list").append('<li class="bike-card"><div class="bike-header"><h2>'+bike.scooterName+'</h2><img src="'+bike.scooterImage+'" alt="Scooter image" class="bike-picture"><img src="'+bike.scooterBrand+'" alt="Scooter Brand" class="brand-logo"></div><div class="bike-info"><h3>Specifications</h3><ul class="specs"><li class="left-specs"><ul><li class="price">'+bike.price + '</li><li class="engine">'+bike.engine+'cc</li></ul></li><li class="right-specs"><ul><li class="mpg">'+bike.mpg+'MPG</li><li class="speed">'+bike.speed+'MPH</li></ul></li></ul></div></li>');
+			}; //end if
+			})//end each
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+    // *******slideshow*****************************************************
+       var t=setInterval(function(){
+         $(".slideshow ul").animate({marginLeft:0}, "slow", "linear", function(){
+           $(this).find("li:last").after($(this).find("li:first"));
+           $(this).css({marginLeft:0});
+           $(".slideshow li").each(function(){
+          $(this).css("display", "none");
+         })
+         $(".slideshow li:first-child").css("display", "block");
+         })
+       }, 5000);
+       });
+	</script>
 </body>
 </html>
