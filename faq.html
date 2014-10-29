@@ -3,24 +3,36 @@
 <head>
 	<title>Highland Motorsport | Vespa Louisville</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>	
-	<header class="header">
+<header class="header">
 		<div class="header-div">
 			<a href="index.html"><img src="icons/Logo.jpg" class="logo"></a>
-			<div class="main-nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="scooters.html">Scooters</a></li>
-					<li><a href="parts.html">Parts</a></li>
-					<li class="selected"><a href="faq.html">FAQ</a></li>
-					<li><a href="about.html">About Us</a></li>
-				</ul>
-			</div>
+			<ul class="nav nav-pills" role="tablist">
+				  <li><a href="index.html">Home</a></li>
+				  <li class="dropdown">
+				  	<a href="scooters.html">Scooters<span class="caret"></span>
+				  	</a>
+				  	<ul class="dropdown-menu" role="menu">
+				  	</ul>
+			  	  </li>
+				  <li><a href="parts.html">Parts</a></li>
+				  <li class="active"><a href="faq.html">FAQ</a></li>
+				  <li><a href="about.html">About Us</a></li>
+			</ul>
 		</div>
-	</header>
-	<div class="main wide">
+	</header>	
+	<div class="container">
 		<h1>Frequently Asked Questions</h1>
 			<div>
 				<h2>Why a scooter?</h2>
@@ -28,7 +40,7 @@
 				<h2>Do I need a motorcycle license?</h2>
 					<p>Kentucky state law requires insurance and motorcycle licenses for all vehicles with an engine larger than 50ccs. Luckily, both are very easy to acquire! Insurance is available from all major auto insurers. To obtain a motorcycle permit, folow the directions below:</p>
 					<ol>
-						<li>Download the Kentucky Driver's Manual <a href="http://kentuckystatepolice.org/pdf/2012_ky_drivers_manual_op.pdf">here</a>.</li>
+						<a class="btn" href="http://kentuckystatepolice.org/pdf/2012_ky_drivers_manual_op.pdf">Download the Kentucky Driver's Manual</a>
 						<li>Read the "Motorcycle" section, starting at page 35.</li>
 						<li>Visit the DMV and take the Motorcycle Permit written exam. A motorcycle permit allows you to operate a scooter with an engine larger than 50ccs, but does not allow you to have a passeneger. This is valid for two years, and renewable once for an additional year.</li>
 						<li>After one month, take the practical exam and receive a motorcycle endoresement on your driver's license.</li>
@@ -39,12 +51,12 @@
 					<p>Yes! There are multiple options available:</p>
 					<p>For Genuine, Vespa, and Piaggio scooters, financing is available through <a href="http://www.sheffieldfinancial.com">Sheffield Financial</a>, with applications available online or in-store.</p>
 					<p>For our other brands, or to work with a local credit union, contact Dita Sherifi at <a href="http://www.kytelco.com/">Kentucky Telco</a>.<br>
-					<a href="tel:(502)%20710-0927" class="ky-telco-phone phone">(502) 710-0927</a><br>
-					<a href="mailto:ditasherifi@kytelco.com" class="ky-telco-email email">ditasherifi@kytelco.com</a></p>
+					<a href="tel:(502)%20710-0927" class="ky-telco-phone phone btn">(502) 710-0927</a><br>
+					<a href="mailto:ditasherifi@kytelco.com" class="ky-telco-email email btn">ditasherifi@kytelco.com</a></p>
 				<h2>Can you fix my scooter?</h2>
 					<p>We offer a full range of in-house repair services, with two full-time technicians on staff. Due to demand during high season (April through October), we are only able to service the brands that we sell in store. During low season, we are happy to provide services on all quality scooter brands.</p>
 					<p>If you're having difficulty operating your scooter and would prefer pick-up or delivery service, we are happy to assist you.</p>
-					<p>To schedule a service appointment, please call <a href="tel:+1502452150" class="phone">(502) 451-2159</a>.</p>
+					<p>Call us to schedule an appointment <a href="tel:+1502452150" class="phone btn">(502) 451-2159</a>.</p>
 				<h2>How can I get involved?</h2>
 					<p>Join our mailing list! Click <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=p8a5jwdab&p=oi&m=1103481471855" target="_blank">here</a> to get news on group rides, local scooter events, and exciting new bikes available at Highland Motorsport.</p>
 					<p>There are also scooter groups that meet at the Barret Bar and the Monkey Wrench every wednesday, on the corner of Barret and Winter Avenues. Stop by and say hello!</p>
@@ -53,7 +65,8 @@
 	<footer>
 		<p>This site contains links to other internet sites. Such links are not endorsements of any products or services in such sites, and no information in such site has been endorsed or approved by Highland Motorsport LLC</p>
 	</footer>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

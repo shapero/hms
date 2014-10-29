@@ -2,22 +2,34 @@
 <html>
 <head>
 	<title>Highland Motorsport | Vespa Louisville</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>	
-	<header class="header">
+<header class="header">
 		<div class="header-div">
 			<a href="index.html"><img src="icons/Logo.jpg" class="logo"></a>
-			<div class="main-nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li class="selected"><a href="scooters.html">Scooters</a></li>
-					<li><a href="parts.html">Parts</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="about.html">About Us</a></li>
-				</ul>
-			</div>
+			<ul class="nav nav-pills" role="tablist">
+				  <li><a href="index.html">Home</a></li>
+				  <li class="dropdown active">
+				  	<a href="scooters.html">Scooters<span class="caret"></span>
+				  	</a>
+				  	<ul class="dropdown-menu" role="menu">
+				  	</ul>
+			  	  </li>
+				  <li><a href="parts.html">Parts</a></li>
+				  <li><a href="faq.html">FAQ</a></li>
+				  <li><a href="about.html">About Us</a></li>
+			</ul>
 		</div>
 	</header>
 	<div class="main">
@@ -52,7 +64,8 @@
 	<footer>
 		<p>This site contains links to other internet sites. Such links are not endorsements of any products or services in such sites, and no information in such site has been endorsed or approved by Highland Motorsport LLC</p>
 	</footer>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 		$.getJSON("js/scooter.json", function(response){

@@ -3,53 +3,72 @@
 <head>
 	<title>Highland Motorsport | Vespa Louisville</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>	
+<body>
 	<header class="header">
 		<div class="header-div">
 			<a href="index.html"><img src="icons/Logo.jpg" class="logo"></a>
-			<div class="main-nav">
-				<ul>
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="scooters.html">Scooters</a></li>
-					<li><a href="parts.html">Parts</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="about.html">About Us</a></li>
-				</ul>
-			</div>
+			<ul class="nav nav-pills" role="tablist">
+				  <li class="active"><a href="index.html">Home</a></li>
+				  <li class="dropdown">
+				  	<a href="scooters.html">Scooters<span class="caret"></span>
+				  	</a>
+				  	<ul class="dropdown-menu" role="menu">
+				  	</ul>
+			  	  </li>
+				  <li><a href="parts.html">Parts</a></li>
+				  <li><a href="faq.html">FAQ</a></li>
+				  <li><a href="about.html">About Us</a></li>
+			</ul>
 		</div>
 	</header>
-	<div class="body">
-		<div class="slideshow center margin1">
-		    <ul class="list-no">
-		        <li><img src="banners/946.jpg" width="auto" height="auto"  alt="Vespa 946" class="slide"></li>
-		        <li><img src="banners/primavera.jpg" width="auto" height="auto"  alt="Vespa Primavera" class="slide"></li>
-		        <li><img src="banners/savings.jpg" width="auto" height="auto"  alt="Customer Cash" class="slide"></li>
-		        <li><img src="banners/sprint.jpg" width="auto" height="auto"  alt="Vespa Sprint" class="slide"></li>
-		    </ul>
-		</div>
-		<div class="store-info">
-			<h2>Store Hours</h2>
-			<div class="hours">
-				<p><span>Monday</span> Closed</p>
-				<p><span>Tuesday</span> 1pm - 6pm</p>
-				<p><span>Wednesday</span> 1pm - 6pm</p>
-				<p><span>Thursday</span> 1pm - 6pm</p>
-				<p><span>Friday</span> 1pm - 6pm</p>
-				<p><span>Saturday</span> 10am - 4pm</p>
-				<p><span>Sunday</span> Closed</p>
-				<p><em>Extended hours available</em></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				<div class="slideshow center margin1">
+				    <ul class="list-no">
+				        <li><img src="banners/946.jpg" width="auto" height="auto"  alt="Vespa 946" class="slide"></li>
+				        <li><img src="banners/primavera.jpg" width="auto" height="auto"  alt="Vespa Primavera" class="slide"></li>
+				        <li><img src="banners/savings.jpg" width="auto" height="auto"  alt="Customer Cash" class="slide"></li>
+				        <li><img src="banners/sprint.jpg" width="auto" height="auto"  alt="Vespa Sprint" class="slide"></li>
+				    </ul>
+				</div>
 			</div>
-			<h2>Contact Information</h2>
-			<div class="contact">
-				<p><span class="phone"></span> (502) 451-2150</p>
-				<p><span class="address"></span> 1125 Bardstown Road<br> &nbsp; &nbsp; &nbsp; &nbsp; Louisville KY 40207</p>
-				<p><span class="email"></span> <a href="mailto:service@highlandmotorsport.com">service@highlandmotorsport.com</a></p>
-				<p><span class="facebook"></span> <a href="http://www.facebook.com/highlandmotorsport" target="_blank">Highland Motorsport</a></p>
+			<div class="col-sm-3">
+				<div class="store-info">
+					<h2>Store Hours</h2>
+					<div class="hours">
+						<p><span>Monday</span> Closed</p>
+						<p><span>Tuesday</span> 1pm - 6pm</p>
+						<p><span>Wednesday</span> 1pm - 6pm</p>
+						<p><span>Thursday</span> 1pm - 6pm</p>
+						<p><span>Friday</span> 1pm - 6pm</p>
+						<p><span>Saturday</span> 10am - 4pm</p>
+						<p><span>Sunday</span> Closed</p>
+						<p><em>Extended hours available</em></p>
+					</div>
+					<h2>Contact Information</h2>
+					<div class="contact">
+						<p><span class="phone"></span> (502) 451-2150</p>
+						<p><span class="address"></span> 1125 Bardstown Road<br> &nbsp; &nbsp; &nbsp; &nbsp; Louisville KY 40207</p>
+						<p><span class="email"></span> <a href="mailto:service@highlandmotorsport.com">service@highlandmotorsport.com</a></p>
+						<p><span class="facebook"></span> <a href="http://www.facebook.com/highlandmotorsport" target="_blank">Highland Motorsport</a></p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="featured-scooters">
+			<div "row"
 			<ul id="scooter-browse-list">
 			</ul>
 		</div>	
@@ -57,7 +76,8 @@
 	<footer>
 		<p>This site contains links to other internet sites. Such links are not endorsements of any products or services in such sites, and no information in such site has been endorsed or approved by Highland Motorsport LLC</p>
 	</footer>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	<script>
 			$.getJSON("js/scooter.json", function(response){
@@ -83,5 +103,6 @@
        }, 5000);
        });
 	</script>
+
 </body>
 </html>

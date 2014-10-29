@@ -1,13 +1,13 @@
 //create a select and append it to the menu
 var $select = $("<select></select>");
-$(".main-nav").append($select);
+$(".nav").append($select);
 //create options in the selector for each nav item
-$(".main-nav a").each(function() {
+$(".nav a").each(function() {
 	var $anchor = $(this);
 	var $option = $("<option></option>");
 
-	if($anchor.parent().hasClass("selected")) {
-		$option.prop("selected", true);
+	if($anchor.parent().hasClass("active")) {
+		$option.prop("active", true);
 	}
 	//the option's value is the reference of each link
 	$option.val($anchor.attr("href"));

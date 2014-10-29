@@ -44,7 +44,17 @@ header {
 	float: right;
 	align-self: flex-start;
 }
+ 
+/*Nav Styles */
 
+.nav li {
+	background-color: #52BD4A;
+}
+
+.nav-pills li a {
+	border-radius: 4px;
+}
+/*
 .main-nav ul {
 	list-style-type: none;
 	clear: left;
@@ -76,7 +86,7 @@ ul.selected {
 .main-nav select {
 	display: none;
 }
-
+*/
 
 
 /*Footer Styles*/
@@ -103,7 +113,7 @@ footer p {
 
 .slideshow {
 	float: left;
-	width: 70%;
+	width: 100%;
 	margin: 20px 10px auto 0;
 	height: 465px;
 	overflow: hidden;
