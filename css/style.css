@@ -51,9 +51,19 @@ header {
 	background-color: #52BD4A;
 }
 
-.nav-pills li a {
-	border-radius: 4px;
+@media (min-width: 768px) {
+	.nav select{
+    	display: none;
+	}
 }
+
+@media (max-width: 767px) {
+	.nav li {
+		display: none;
+	}
+}
+
+
 /*
 .main-nav ul {
 	list-style-type: none;
@@ -141,16 +151,14 @@ footer p {
 
 .store-info {
 	background-color: #52BD4A;
-	float:left;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
-	width: 29%;
-	min-width: 300px;
 	margin-top:20px;
 	clear: right;
-	font-size: .85em;
-	height: 465px;
+	height: auto;
+	padding-top: 5px
+	width: auto;
 }
 
 
@@ -162,15 +170,6 @@ footer p {
 .store-info span {
 	font-weight: bold;
 }
-
-.hours p {
-	line-height: .66;
-}
-
-.contact{
-	font-style: bold;
-}
-
 
 .phone:before {
 	content: url("../icons/phone.png");
@@ -423,8 +422,3 @@ footer p {
   }
 }
 
-/*@media (min-width: 800px) {
-	.main-nav select{
-    	display: none;
-	}
-}*/
