@@ -19,6 +19,7 @@ li {
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
+	color: white;
 
 }
 
@@ -129,7 +130,12 @@ footer p {
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
-	margin-top:0px;
+	margin:0px auto 20px;
+}
+
+.fancy{
+	font-style: italic;
+	font-size: .85em;
 }
 
 .store-info {
@@ -139,9 +145,24 @@ footer p {
 	border-radius: 18px;
 	margin-top:20px;
 	height: auto;
-	padding-top: 5px
+	padding-top: 10px;
 	width: auto;
 	clear: left;
+}
+
+.store-info h2 {
+	text-align: center;
+}
+
+.hours {
+	/*background-color: #FFB542;*/
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	margin: 10px;
+	/*box-shadow: 1px 1px 5px black;*/
+	padding: 10px;
+	font-size: 1em;
 }
 
 @media (max-width: 768px) {
@@ -159,7 +180,6 @@ footer p {
 	.store-info h2 {
 		color: black;
 		padding: 10px 0 10px 0;
-		text-align: center;
 		font-size: 2.75em;
 	}
 
@@ -172,20 +192,24 @@ footer p {
 
 	.store-info a {
 		font-size: 1em;
-		color: #333;
+		color: #fff;
 	}
 }
 
 
 .store-info p,
 .store-info h2 {
-	margin-left: 10px;
+	margin: 10px;
 }
 
 .store-info span {
 	font-weight: bold;
 }
 
+.contact a {
+	width:100%;
+	text-align: left;
+}
 .phone:before {
 	content: url("../icons/phone.png");
 }
@@ -396,6 +420,10 @@ footer p {
 .map {
 	float: right;
 	width: 40%;
+}
+
+#about-us-contact{
+	width: 300px;
 }
 
 
