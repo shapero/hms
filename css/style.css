@@ -51,6 +51,12 @@ header {
 	background-color: #52BD4A;
 }
 
+.nav select {
+	margin: 10px auto;
+	width: 170px;
+}
+
+/*Hide - Display Select*/
 @media (min-width: 768px) {
 	.nav select{
     	display: none;
