@@ -12,6 +12,10 @@ li {
 	list-style: none;
 }
 
+p {
+	font-size: 1.15em;
+}
+
 .btn {
 	background-color: #E71831;
 	box-shadow: 1px 1px 5px black;
@@ -47,19 +51,23 @@ header {
 .logo {
 	height: 200px;
 	float: left;
-	margin-bottom: -10px;
+	/*margin-bottom: -10px;*/
 }
 
-.tagline {
-	color: white;
-	float: right;
-	align-self: flex-start;
-}
  
 /*Nav Styles */
+.nav {
+	float: right;
+	font-size:1.5em;
+	margin-top:150px;
+}
 
 .nav li {
 	background-color: #52BD4A;
+}
+
+.nav a {
+	color: #333;
 }
 
 .nav select {
@@ -74,6 +82,10 @@ header {
 @media (min-width: 768px) {
 	.nav select{
     	display: none;
+	}
+
+	.nav {
+		margin-top: 0px;
 	}
 }
 
@@ -131,6 +143,7 @@ footer p {
 	-moz-border-radius: 18px;
 	border-radius: 18px;
 	margin:0px auto 20px;
+	border: 1px black;
 }
 
 .fancy{
@@ -138,7 +151,7 @@ footer p {
 	font-size: .85em;
 }
 
-.store-info {
+/*.store-info {
 	background-color: #52BD4A;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
@@ -148,14 +161,14 @@ footer p {
 	padding-top: 10px;
 	width: auto;
 	clear: left;
-}
+}*/
 
 .store-info h2 {
 	text-align: center;
 }
 
 .hours {
-	/*background-color: #FFB542;*/
+	background-color: #52BD4A;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
@@ -166,16 +179,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-	.store-info{
-		margin-top: 0px;
-		padding: 0px;
-
-	}
-
-	.store-info div {
-		margin: 0px;
-		padding: 0px;
-	}
 
 	.store-info h2 {
 		color: black;
