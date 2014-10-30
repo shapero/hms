@@ -73,7 +73,7 @@ header {
 .nav select {
 	margin: 30px auto -10px;
 	width: 170px;
-	background: #FFB542;
+	background: lightgray;
 	padding: 5px;
 
 }
@@ -83,15 +83,14 @@ header {
 	.nav select{
     	display: none;
 	}
-
-	.nav {
-		margin-top: 0px;
-	}
 }
 
 @media (max-width: 767px) {
 	.nav li {
 		display: none;
+	}
+		.nav {
+		margin-top: 0px;
 	}
 }
 
@@ -151,24 +150,12 @@ footer p {
 	font-size: .85em;
 }
 
-/*.store-info {
-	background-color: #52BD4A;
-	-webkit-border-radius: 18px;
-	-moz-border-radius: 18px;
-	border-radius: 18px;
-	margin-top:20px;
-	height: auto;
-	padding-top: 10px;
-	width: auto;
-	clear: left;
-}*/
-
 .store-info h2 {
 	text-align: center;
 }
 
+.blurb,
 .hours {
-	background-color: #52BD4A;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
@@ -176,6 +163,14 @@ footer p {
 	/*box-shadow: 1px 1px 5px black;*/
 	padding: 10px;
 	font-size: 1em;
+}
+
+.blurb {
+	background-color:#FFB542;
+}
+
+.hours {
+	background-color: #52BD4A;
 }
 
 @media (max-width: 768px) {
