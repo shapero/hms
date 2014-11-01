@@ -97,10 +97,12 @@
 
 				</div>
 			</div>
-		<div class="featured-scooters">
-			<h1>Featured Bikes</h1>
-			<ul id="scooter-browse-list">
-			</ul>
+		<div class="row">	
+			<div class="featured-scooters">
+				<h1>Featured Bikes</h1>
+				<ul id="scooter-browse-list">
+				</ul>
+			</div>
 		</div>	
 	</div>
 	<footer>
@@ -113,7 +115,7 @@
 			$.getJSON("js/scooter.json", function(response){
 			$.each(response, function(index, bike) {
 				if (bike.feature === true) {
-				$("#scooter-browse-list").append('<li class="bike-card"><div class="bike-header"><h2>'+bike.scooterName+'</h2><img src="'+bike.scooterImage+'" alt="Scooter image" class="bike-picture"><img src="'+bike.scooterBrand+'" alt="Scooter Brand" class="brand-logo"></div><div class="bike-info"><h3>Specifications</h3><ul class="specs"><li class="left-specs"><ul><li class="price">'+bike.price + '</li><li class="engine">'+bike.engine+'cc</li></ul></li><li class="right-specs"><ul><li class="mpg">'+bike.mpg+'MPG</li><li class="speed">'+bike.speed+'MPH</li></ul></li></ul></div></li>');
+				$("#scooter-browse-list").append('<li class="bike-card"><div class="col-sm-4"<div class="bike-header"><h2>'+bike.scooterName+'</h2><img src="'+bike.scooterImage+'" alt="Scooter image" class="bike-picture"><img src="'+bike.scooterBrand+'" alt="Scooter Brand" class="brand-logo"></div><div class="bike-info"><h3>Specifications</h3><ul class="specs"><li class="left-specs"><ul><li class="price">'+bike.price + '</li><li class="engine">'+bike.engine+'cc</li></ul></li><li class="right-specs"><ul><li class="mpg">'+bike.mpg+'MPG</li><li class="speed">'+bike.speed+'MPH</li></ul></li></ul></div></div></li>');
 			}; //end if
 			})//end each
 		});

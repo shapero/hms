@@ -19,12 +19,17 @@ p {
 .btn {
 	background-color: #E71831;
 	box-shadow: 1px 1px 5px black;
+	margin-top: 5px;
 	margin-bottom: 10px;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
 	color: white;
 
+}
+
+.container {
+	margin-top: 10px;
 }
 
 /*Header Styles*/
@@ -34,18 +39,17 @@ a {
 }
 
 header {
-	background: #444;
+	background: url("../icons/dots.jpg")
+		/*rgba(.5, .5, .5, .5)*/;
 	display: flex;
 	justify-content: center;
 }
 
 
 .header-div {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
 	width: 80%;
 	max-width: 1200px;
+	text-align: center;
 }
 
 .logo {
@@ -60,6 +64,7 @@ header {
 	float: right;
 	font-size:1.5em;
 	margin-top:150px;
+
 }
 
 .nav li {
@@ -145,6 +150,12 @@ footer p {
 	border: 1px black;
 }
 
+.jumbotron div {
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
 .fancy{
 	font-style: italic;
 	font-size: .85em;
@@ -160,7 +171,6 @@ footer p {
 	-moz-border-radius: 18px;
 	border-radius: 18px;
 	margin: 10px;
-	/*box-shadow: 1px 1px 5px black;*/
 	padding: 10px;
 	font-size: 1em;
 }
