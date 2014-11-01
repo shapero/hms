@@ -33,6 +33,17 @@
 	 "feature": true
 	},
 	{"scooterName":"Primavera",
+	 "scooterClass":"genuine",
+	 "scooterID": "primavera",
+	 "scooterImage":"bikes/primavera.jpg",
+	 "scooterBrand":"icons/vespa.gif",
+	 "price":"4799",
+	 "engine":"155",
+	 "mpg":"117",
+	 "speed":"59",
+	 "feature": true
+	},
+	{"scooterName":"Primavera",
 	 "scooterClass":"vespa",
 	 "scooterID": "primavera",
 	 "scooterImage":"bikes/primavera.jpg",
@@ -42,6 +53,6 @@
 	 "mpg":"117",
 	 "speed":"59",
 	 "feature": true
-	}
+	},
 ]
 

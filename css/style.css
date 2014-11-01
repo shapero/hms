@@ -28,10 +28,6 @@ p {
 
 }
 
-.container {
-	margin-top: 10px;
-}
-
 /*Header Styles*/
 a {
 	text-decoration: none;
@@ -46,7 +42,7 @@ header {
 
 
 .header-div {
-	width: 80%;
+/*	width: 80%;*/
 	max-width: 1200px;
 	text-align: center;
 }
@@ -60,9 +56,9 @@ header {
  
 /*Nav Styles */
 .nav {
-	float: right;
-	font-size:1.5em;
+	font-size:1.2em;
 	margin-top:150px;
+	float: right;
 
 }
 
@@ -77,8 +73,9 @@ header {
 .nav select {
 	margin: 30px auto -10px;
 	width: 170px;
-	background: lightgray;
+	background: #ccc;
 	padding: 5px;
+	float: left;
 
 }
 
@@ -153,6 +150,10 @@ footer p {
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
+}
+
+.action {
+	font-size: 1.5em;
 }
 
 .fancy{
