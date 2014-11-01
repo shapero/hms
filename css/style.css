@@ -39,8 +39,7 @@ a {
 }
 
 header {
-	background: url("../icons/dots.jpg")
-		/*rgba(.5, .5, .5, .5)*/;
+	background: #444;
 	display: flex;
 	justify-content: center;
 }
