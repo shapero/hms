@@ -30,7 +30,7 @@
 			  	  </li>
 				  <li><a href="parts.html">Parts</a></li>
 				  <li><a href="faq.html">FAQ</a></li>
-				  <li><a href="about.html">About</a></li>
+				  <li><a href="about.html">About Us</a></li>
 
 				</ul>
 				</div>
@@ -58,7 +58,6 @@
 			        	</li>
 				        <li><img src="banners/946.jpg" width="auto" height="auto"  alt="Vespa 946" class="slide"></li>
 				        <li><img src="banners/primavera.jpg" width="auto" height="auto"  alt="Vespa Primavera" class="slide"></li>
-<!-- 				        <li><img src="banners/savings.jpg" width="auto" height="auto"  alt="Customer Cash" class="slide"></li> -->
 				        <li><img src="banners/sprint.jpg" width="auto" height="auto"  alt="Vespa Sprint" class="slide"></li>
 					</ul>
 				</div>
@@ -117,7 +116,7 @@
 			$.getJSON("js/scooter.json", function(response){
 			$.each(response, function(index, bike) {
 				if (bike.feature === true) {
-				$("#scooter-browse-list").append('<li class="bike-card"><div class="col-sm-4"<div class="bike-header"><h2>'+bike.scooterName+'</h2><img src="'+bike.scooterImage+'" alt="Scooter image" class="bike-picture"><img src="'+bike.scooterBrand+'" alt="Scooter Brand" class="brand-logo"></div><div class="bike-info"><h3>Specifications</h3><ul class="specs"><li class="left-specs"><ul><li class="price">'+bike.price + '</li><li class="engine">'+bike.engine+'cc</li></ul></li><li class="right-specs"><ul><li class="mpg">'+bike.mpg+'MPG</li><li class="speed">'+bike.speed+'MPH</li></ul></li></ul></div></div></li>');
+				$("#scooter-browse-list").append('<div class="col-sm-4"><li class="bike-card"><div class="bike-header"><h2>'+bike.scooterName+'</h2><img src="'+bike.scooterImage+'" alt="Scooter image" class="bike-picture"><img src="'+bike.scooterBrand+'" alt="Scooter Brand" class="brand-logo"></div><div class="bike-info"><h3>Specifications</h3><ul class="specs"><li class="left-specs"><ul><li class="price">'+bike.price + '</li><li class="engine">'+bike.engine+'cc</li></ul></li><li class="right-specs"><ul><li class="mpg">'+bike.mpg+'MPG</li><li class="speed">'+bike.speed+'MPH</li></ul></li></ul></div></div></li>');
 			}; //end if
 			})//end each
 		});

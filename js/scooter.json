@@ -10,7 +10,7 @@
 	 "speed":"60",
 	 "feature": true
 	},
-	{"scooterName":"Buddy International",
+	{"scooterName":"Buddy Internt'l",
   	 "scooterClass":"genuine",
   	 "scooterID":"buddy-international",
 	 "scooterImage":"bikes/buddy_int.jpg",
@@ -53,6 +53,6 @@
 	 "mpg":"117",
 	 "speed":"59",
 	 "feature": true
-	},
+	}
 ]
 
