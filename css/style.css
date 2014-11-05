@@ -282,31 +282,30 @@ footer p {
 }
 
 /*Scooter styles*/
-/*
+
 .scooter-nav {
-	width: 15%;
-	display: block;
-	float:left;
-}*/
+	background-color: white;
+	margin-top: 15px;
+	border-style: solid;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	padding: 5px;
+}
 
-/*.scooter-browse {
-	display: flex;
-	float: right;
-	flex-wrap: wrap;
-	clear: right;
-	width: 76%;
-}*/
-
-.scooter-nav form {
+.scooter-nav h4 {
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 /*Scooter card Styles*/
 
 .bike-card {
 	/*width: 250px;*/
-	height: autp;
+	height: auto;
+	width: auto;
 	text-align: center;
-	background-color: #999;
+	background-color: #fff;
 	margin: 15px;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
@@ -315,7 +314,6 @@ footer p {
 	padding-bottom: 5px;
 	box-shadow: 0px 3px 10px 4px rgba(0,0,0, 0.7);
 	/*display: block;*/
-	float:right;
 
 }
 
@@ -324,7 +322,7 @@ footer p {
 	height: 200px;
 	border: 2px;
 	margin-bottom: 20px;
-	border-style: solid;
+	/*border-style: solid;*/
 }
 
 .brand-logo{
@@ -389,16 +387,19 @@ Bike Card Media Queries*/
 @media (max-width: 767px) {
 	.bike-card{
 		margin: 20px;
+		width: 90%;
 	}
 	.brand-logo{
 		width: 40%;
-		margin-left: 10%;
+		/*margin-left: 10%;*/
 		height: auto;
+		float: right;
 	}
 	
 	.bike-card ul {
 		list-style-type: none;
 		font-size: 1em;
+		clear: both;
 	}
 }
 
