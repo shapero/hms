@@ -167,6 +167,10 @@ footer p {
 	text-align: center;
 }
 
+.promo {
+	height: 40%;
+}
+
 .blurb,
 .hours {
 	-webkit-border-radius: 18px;
@@ -403,20 +407,6 @@ Bike Card Media Queries*/
 	}
 }
 
-/*.bike-color {
-	display: flex;
-	justify-content: center;
-}
-.bike-color div {
-	float:left;
-	margin: 5px;
-	height: 16px;
-	width: 16px;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 50%;
-	display:none;
-}*/
 
 /*Brand Page Styles*/
 .brand-page-logo{

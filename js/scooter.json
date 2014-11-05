@@ -360,7 +360,7 @@
 	 "engine":"278",
 	 "mpg":"80",
 	 "speed":"70",
-	 "feature": true
+	 "feature": false
 	},
 	{"scooterName":"LXV",
      "scooterClass":"vespa",
