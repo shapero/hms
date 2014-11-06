@@ -36,6 +36,8 @@ a {
 header {
 	background: #444;
 	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
 	justify-content: center;
 }
 
