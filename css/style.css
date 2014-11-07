@@ -307,9 +307,7 @@ footer p {
 /*Scooter card Styles*/
 
 .bike-card {
-	/*width: 250px;*/
 	height: auto;
-	width: auto;
 	text-align: center;
 	background-color: #fff;
 	margin: 15px;
@@ -319,16 +317,13 @@ footer p {
 	border-style: solid;
 	padding-bottom: 5px;
 	box-shadow: 0px 3px 10px 4px rgba(0,0,0, 0.7);
-	/*display: block;*/
 
 }
 
 .bike-picture{
-	/*width: 200px;*/
 	height: 200px;
 	border: 2px;
 	margin-bottom: 20px;
-	/*border-style: solid;*/
 }
 
 .brand-logo{
@@ -396,16 +391,19 @@ Bike Card Media Queries*/
 		width: 90%;
 	}
 	.brand-logo{
-		width: 40%;
-		/*margin-left: 10%;*/
-		height: auto;
-		float: right;
+		width: 25%;
+		margin: auto;
+		height: auto;	
 	}
 	
 	.bike-card ul {
 		list-style-type: none;
 		font-size: 1em;
 		clear: both;
+	}
+
+	.bike-image{
+		margin: 0 5%;
 	}
 }
 
