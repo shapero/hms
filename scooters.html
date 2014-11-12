@@ -110,11 +110,11 @@
 
 
 			$('.bike-card').each(function () {
-				$(this).parent(".col-md-4").hide();
+				$(this).parent(".col-md-4").hide(250);
 				var brand = $(this).data('brand');
 				var shouldShow = $.inArray(brand, checkedBrands);
 				if (shouldShow >= 0) {
-					$(this).parent(".col-md-4").show();
+					$(this).parent(".col-md-4").show(250);
 				}			
 			}) //end scooter card each
 			
@@ -130,8 +130,9 @@
 		if($(this).attr("checked") != true) {
 			$(".brand-input").each(function(){
 				$(this).prop("checked", true);
+				console.log('hey');
 			}) //end each
-			$(".col-md-4").show();			
+			$(".col-md-4").show(250);			
 		} //end if
 	}) //end click
 

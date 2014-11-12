@@ -8,7 +8,7 @@
 	 "engine":"125",
 	 "mpg":"100",
 	 "speed":"60",
-	 "feature": true
+	 "feature": false
 	},
 	{"scooterName":"Buddy Internt'l",
   	 "scooterClass":"genuine",
@@ -30,7 +30,7 @@
 	 "engine":"50",
 	 "mpg":"100+",
 	 "speed":"30",
-	 "feature": true
+	 "feature": false
 	},
 	{"scooterName":"Buddy 125",
      "scooterClass":"genuine",
@@ -52,7 +52,7 @@
 	 "engine":"50",
 	 "mpg":"100+",
 	 "speed":"30",
-	 "feature": true
+	 "feature": false
 	},
 	{"scooterName":"Scorch",
      "scooterClass":"bintelli",
